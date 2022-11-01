@@ -1,8 +1,12 @@
-import './ExpenseDate.css'
+import "./ExpenseDate.css";
 
 const ExpenseDate = (props) => {
-  const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(props.date);
-  const day = new Intl.DateTimeFormat("en-US", { day: "numeric" }).format(props.date);
+  const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(
+    props.date
+  );
+  const day = new Intl.DateTimeFormat("en-US", { day: "numeric" }).format(
+    props.date
+  );
   const year = props.date.getFullYear();
 
   return (

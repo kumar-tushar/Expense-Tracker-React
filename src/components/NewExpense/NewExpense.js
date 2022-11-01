@@ -5,9 +5,9 @@ const NewExpense = (props) => {
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
       ...enteredExpenseData,
-      id: Date.now().toString()
+      id: Date.now().toString(),
     };
-    props.onAddExpense(expenseData)
+    props.onAddExpense(expenseData);
   };
 
   return (
